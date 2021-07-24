@@ -1,0 +1,2 @@
+fpdf==1.7.2
+pdftotext==2.1.6
