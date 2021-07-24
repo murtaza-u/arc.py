@@ -16,6 +16,30 @@ cd arc.py/
 pip install -r requirements.txt
 ```
 
+### OS dependencies(taken from [pdftotext](https://pypi.org/project/pdftotext/))
+Debian, Ubuntu, and friends
+```bash
+sudo apt install build-essential libpoppler-cpp-dev pkg-config python3-dev
+```
+
+Fedora, Red Hat, and friends
+```bash
+sudo yum install gcc-c++ pkgconfig poppler-cpp-devel python3-devel
+```
+
+macOS
+```bash
+brew install pkg-config poppler python
+```
+
+Windows
+Currently tested only when using conda:
+Install the Microsoft Visual C++ Build Tools
+Install poppler through conda:
+```bash
+conda install -c conda-forge poppler
+```
+
 # Usage
 ```bash
 python arc.py <path/to/input.pdf>
