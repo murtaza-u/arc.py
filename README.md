@@ -27,6 +27,11 @@ sudo apt install build-essential libpoppler-cpp-dev pkg-config python3-dev
 sudo yum install gcc-c++ pkgconfig poppler-cpp-devel python3-devel
 ```
 
+##### Arch
+```bash
+sudo pacman -S base-devel
+```
+
 ###### macOS
 ```bash
 brew install pkg-config poppler python
