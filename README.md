@@ -7,7 +7,7 @@
 From the time I got into University I have been burdened with shitload of assignments. Every other day out of nowhere a new assignment pops up. You might think these assignments involve complex computer science problems and impossible math equations. No! Most of the time all I need to do is simply copy down contents of a pdf file(provided by the Professor) on to sheets of paper and send a soft copy to the respective Prof. These assignments provide no substantial growth to the student and are a mere waste of time. My solution -> arc.py
 
 # What is arc.py
-arc.py is a simple python script that takes a pdf file as an input and generates a pdf file that looks like it was hand written.
+arc.py is a simple python script that takes a pdf/plain text file as an input and generates a pdf file that looks like it was hand written.
 
 # Install
 ```bash
@@ -47,7 +47,9 @@ conda install -c conda-forge poppler
 
 # Usage
 ```bash
-python arc.py <path/to/input.pdf>
+python arc.py -p <path/to/input.pdf>
+python arc.py -t <path/to/input.txt>
+python arc.py -h # for more info
 ```
 
 # Example
