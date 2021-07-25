@@ -52,6 +52,17 @@ python arc.py -t <path/to/input.txt>
 python arc.py -h # for more info
 ```
 
+# Integration with other unix command line utilities
+### Recursively convert all pdf(starting from current working directory)
+```bash
+find -type f -name "*.pdf" -printf '%P\n' | xargs -I {} python arc.py -p {}
+```
+
+### Convert all pdf only in current working directory
+```bash
+find -maxdepth 1 -type f -name "*.pdf" -printf '%P\n' | xargs -I {} python arc.py -p {}
+```
+
 # Example
 Check [example](https://github.com/Murtaza-Udaipurwala/arc.py/tree/master/test)
 
