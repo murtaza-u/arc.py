@@ -32,6 +32,11 @@ sudo yum install gcc-c++ pkgconfig poppler-cpp-devel python3-devel
 sudo pacman -S base-devel
 ```
 
+#### Void
+```bash
+sudo xbps-install poppler
+```
+
 ###### macOS
 ```bash
 brew install pkg-config poppler python
